@@ -1,0 +1,43 @@
+Information: Reading parasitics in incremental mode, which is always the default. "-increment" option will be obsoleted in later releases. (PARA-113)
+Information: Derived library resistance unit is 999.999939 Kohm (Time unit is 1 ns, and Capacitance unit is 0.001000 pF). (DES-028)
+
+****************************************
+Report : read_parasitics /Users/students/dennison/asic_flow_setup_orig/pnr/pnr_ME/output/ME_extracted.spef.max
+	-increment
+Design : top
+Version: F-2011.06-SP3-4
+Date   : Mon Apr 28 19:30:30 2014
+****************************************
+
+        0 error(s)
+        Format is SPEF
+        Annotated nets                   :         2276
+        Annotated capacitances           :        36158
+        Annotated resistances            :        33888
+        Reduced coupling capacitances    :         6678
+        Annotated PI models              :            0
+        Annotated Elmore delays          :            0
+
+1
+Information: Reading parasitics in incremental mode, which is always the default. "-increment" option will be obsoleted in later releases. (PARA-113)
+Information: Derived library resistance unit is 999.999939 Kohm (Time unit is 1 ns, and Capacitance unit is 0.001000 pF). (DES-028)
+
+****************************************
+Report : read_parasitics /Users/students/dennison/asic_flow_setup_orig/pnr/pnr_ME/output/ME_extracted.spef.min
+	-increment
+Design : top
+Version: F-2011.06-SP3-4
+Date   : Mon Apr 28 19:30:30 2014
+****************************************
+
+        0 error(s)
+        Format is SPEF
+        Annotated nets                   :         2276
+        Annotated capacitances           :        27964
+        Annotated resistances            :        33888
+        Reduced coupling capacitances    :         6678
+        Annotated PI models              :            0
+        Annotated Elmore delays          :            0
+
+1
+1

@@ -1,0 +1,5 @@
+Error: could not open script file "/Users/students/dennison/asic_flow_setup_orig/pt_post/scripts/init_design_icc.tcl" (CMD-015)
+icc_shell> exit
+
+Thank you...
+

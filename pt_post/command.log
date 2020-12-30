@@ -1,0 +1,8 @@
+#@ # 
+#@ # Running icc_shell Version F-2011.09-ICC-SP4 for linux -- Feb 29, 2012
+#@ # Date:   Thu Mar 27 23:40:23 2014
+#@ # Run by: dennison@nano.sfsu.edu
+#@ 
+
+source -echo -verbose /Users/students/dennison/asic_flow_setup_orig/pt_post/scripts/init_design_icc.tcl
+exit

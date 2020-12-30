@@ -1,0 +1,37 @@
+source /packages/synopsys/primetime/L-2016.06-SP2/admin/setup/.synopsys_pt.setup
+primetime
+vi scripts/post_layout_pt.tcl
+source "/courses/engr852/engr852-06/asic_flow_setup/lib_gen/lib_container.tcl"
+read_verilog ../pnr/pnr_ME/output/ME_extracted.v
+read_verilog "/courses/engr852/engr852-06/asic_flow_setup/pnr/pnr_fifo/scripts/output/ME_extracted.v"
+current_design top
+link
+read_parasitics -format SPEF "/courses/engr852/engr852-06/asic_flow_setup/pnr/pnr_fifo/scripts/output/ME_extracted.spef.max"
+read_parasitics -format SPEF "/courses/engr852/engr852-06/asic_flow_setup/pnr/pnr_fifo/scripts/output/ME_extracted.spef.min"
+read_sdf "/courses/engr852/engr852-06/asic_flow_setup/pnr/pnr_fifo/scripts/output/ME_extracted.sdf"
+read_parasitics -format SPEF "/courses/engr852/engr852-06/asic_flow_setup/pnr/pnr_fifo/scripts/output/ME_extracted.spef.min"
+read_parasitics -format SPEF "/courses/engr852/engr852-06/asic_flow_setup/pnr/pnr_fifo/scripts/output/ME_extracted.spef.max"
+set_case_analysis 0 scanEn
+read_sdc "/courses/engr852/engr852-06/asic_flow_setup/pnr/pnr_fifo/scripts/const/ME_extracted.sdc"
+read_sdc "/courses/engr852/engr852-06/asic_flow_setup/pnr/pnr_fifo/scripts/const/ME_extracted.sdc"
+read_sdc
+read_sdc "/courses/engr852/engr852-06/asic_flow_setup/pnr/pnr_fifo/scripts/const/ME_extracted.sdc"
+"/courses/engr852/engr852-06/asic_flow_setup/pnr/pnr_fifo/scripts/const/ME.sdc"
+read_sdc "/courses/engr852/engr852-06/asic_flow_setup/pnr/pnr_fifo/scripts/const/ME.sdc"
+read_sdc "/courses/engr852/engr852-06/asic_flow_setup/pnr/pnr_fifo/scripts/const/ME_extracted.sdc"
+write_sdc const/ME.sdc -version 2.0
+write_sdc const/ME.sdc -version 2.0
+write_sdc "/courses/engr852/engr852-06/asic_flow_setup/pnr/pnr_fifo/scripts/const/ME_extracted.sdc" -version 2.0
+read_sdc "/courses/engr852/engr852-06/asic_flow_setup/pnr/pnr_fifo/scripts/const/ME_extracted.sdc"
+set_case_analysis 0 scanEn
+set_case_analysis in scanEn0
+set_case_analysis 0 -in scanEn
+set_case_analysis 0 -inscanEn
+pwd
+#report_timing -from [all_registers -clock_pins] -to [all_registers -data_pins] -delay_type max  >> "/courses/engr852/engr852-06/asic_flow_setup/pt_post/reports/timing.rpt"
+set_case_analysis 1 scanEn
+set_case_analysis 1 -scanEn
+save_indesign_session /tmp/.gca_GyUixm 
+save_indesign_session /tmp/.gca_GyUixm 
+save_indesign_session /tmp/.gca_ITDLdj 
+save_indesign_session /tmp/.gca_ITDLdj 

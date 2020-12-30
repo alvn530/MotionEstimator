@@ -1,0 +1,53 @@
+Warning: Some timing arcs have been disabled for breaking timing loops
+	or because of constant propagation. Use the 'report_disable_timing'
+	command to get the list of these disabled timing arcs. (PTE-003)
+Information: Zero transition time used at to pin of annotated arcs. Delays on not annotated delay arcs will be estimated using best available slew.  (PTE-054)
+****************************************
+Report : timing
+	-path_type full
+	-delay_type min
+	-max_paths 1
+Design : top
+Version: F-2011.06-SP3-4
+Date   : Tue Apr 22 18:13:17 2014
+****************************************
+
+Warning: There are 560 invalid end points for constrained paths. (UITE-416)
+
+  Startpoint: pe_u/pe5/Rpipe_reg[6]
+               (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: pe_u/pe5/Rpipe_reg[7]
+               (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.01 *     0.01
+  pe_u/pe5/Rpipe_reg[6]/CLK (SDFFX1_LVT)                  0.00       0.01 r
+  pe_u/pe5/Rpipe_reg[6]/Q (SDFFX1_LVT)                    0.11 *     0.13 r
+  pe_u/pe5/Rpipe_reg[7]/SI (SDFFX1_LVT)                   0.00 *     0.13 r
+  data arrival time                                                  0.13
+
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.08 *     0.08
+  pe_u/pe5/Rpipe_reg[7]/CLK (SDFFX1_LVT)                             0.08 r
+  library hold time                                      -0.05 *     0.03
+  data required time                                                 0.03
+
+
+
+
+
+
+
+
+  ------------------------------------------------------------------------------
+  data required time                                                 0.03
+  data arrival time                                                 -0.13
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        0.10
+
+
+1

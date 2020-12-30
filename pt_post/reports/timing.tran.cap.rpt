@@ -1,0 +1,73 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-input_pins
+	-nets
+	-max_paths 1
+	-transition_time
+	-capacitance
+	-sort_by slack
+Design : top
+Version: L-2016.06-SP2
+Date   : Sun Dec 20 18:58:41 2020
+****************************************
+
+Warning: There are 59 invalid end points for constrained paths. (UITE-416)
+
+  Startpoint: ctl_u/count_reg[3]
+               (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: pe1/Accumulate_reg[7]
+               (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Last common pin: clock
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                       Fanout    Cap      Trans       Incr       Path
+  -----------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                  0.00       0.00       0.00
+  clock network delay (propagated)                           0.01 *     0.01
+  ctl_u/count_reg[3]/CLK (DFFX1_LVT)              0.00       0.00       0.01 r
+  ctl_u/count_reg[3]/QN (DFFX1_LVT)               0.00       0.20 *     0.21 r
+  ctl_u/n40 (net)                4     3.62 
+  ctl_u/U84/A2 (NAND2X0_LVT)                      0.00       0.00 *     0.21 r
+  ctl_u/U84/Y (NAND2X0_LVT)                       0.00       0.12 *     0.33 f
+  ctl_u/S1S2mux[3] (net)         2     3.60 
+  ctl_u/U79/A (INVX0_LVT)                         0.00       0.00 *     0.33 f
+  ctl_u/U79/Y (INVX0_LVT)                         0.00       0.10 *     0.43 r
+  ctl_u/n69 (net)                2     1.63 
+  ctl_u/U46/A1 (NAND2X0_LVT)                      0.00       0.00 *     0.43 r
+  ctl_u/U46/Y (NAND2X0_LVT)                       0.00       0.11 *     0.54 f
+  ctl_u/S1S2mux[1] (net)         2     3.18 
+  ctl_u/U48/A (INVX0_LVT)                         0.00       0.00 *     0.54 f
+  ctl_u/U48/Y (INVX0_LVT)                         0.00       0.09 *     0.63 r
+  ctl_u/n68 (net)                2     1.52 
+  ctl_u/U17/A3 (AND4X1_LVT)                       0.00       0.00 *     0.63 r
+  ctl_u/U17/Y (AND4X1_LVT)                        0.00       0.17 *     0.80 r
+  ctl_u/NewDist[15] (net)        4     5.02 
+  U6/A (NBUFFX2_HVT)                              0.00       0.00 *     0.80 r
+  U6/Y (NBUFFX2_HVT)                              0.00       0.45 *     1.25 r
+  n34 (net)                     31    48.04 
+  U7/A (INVX0_HVT)                                0.00       0.00 *     1.25 r
+  U7/Y (INVX0_HVT)                                0.00       1.07 *     2.31 f
+  n35 (net)                     26    29.10 
+  pe1/U49/A2 (NAND2X0_LVT)                        0.00       0.00 *     2.31 f
+  pe1/U49/Y (NAND2X0_LVT)                         0.00       0.26 *     2.57 r
+  pe1/n29 (net)                  3     3.00 
+  pe1/Accumulate_reg[7]/SETB (DFFSSRX1_HVT)       0.00       0.00 *     2.57 r
+  data arrival time                                                     2.57
+
+  clock ideal_clock1 (rise edge)                  0.00       3.49       3.49
+  clock network delay (propagated)                           0.00 *     3.49
+  clock reconvergence pessimism                              0.00       3.49
+  pe1/Accumulate_reg[7]/CLK (DFFSSRX1_HVT)                              3.49 r
+  library setup time                                        -0.65 *     2.84
+  data required time                                                    2.84
+  -----------------------------------------------------------------------------
+  data required time                                                    2.84
+  data arrival time                                                    -2.57
+  -----------------------------------------------------------------------------
+  slack (MET)                                                           0.27
+
+
+1

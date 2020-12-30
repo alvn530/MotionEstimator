@@ -1,0 +1,120 @@
+#@ # 
+#@ # Running pt_shell Version F-2011.06-SP3-4 for linux -- Mar 28, 2012
+#@ # Date:   Mon Apr 28 19:30:23 2014
+#@ # Run by: dennison@nano.sfsu.edu
+#@ 
+
+source /packages/synopsys/primetime/F-2011.06-SP3-4/admin/setup/.synopsys_pt.setup
+#@ #
+#@ # .synopsys_pt.setup: Initialization File for PrimeTime
+#@ #
+#@ 
+#@ 
+#@ #
+#@ # Enable stack trace output on fatal.  Not available for all architectures.
+#@ #
+#@ if { $sh_arch == "sparcOS5" || $sh_arch == "hpux10" ||      $sh_arch == "hp32" || $sh_arch == "linux" } {
+#@   set_unix_variable SYNOPSYS_TRACE ""
+#@ }
+#@ 
+#@ #
+#@ # Variable settings
+#@ #
+#@ 
+#@ #
+#@ # Synopsys strongly recommends that you use new variable message
+#@ # tracing for debugging purposes only.
+#@ #
+#@ set sh_new_variable_message true
+#@ 
+#@ #
+#@ # Synopsys strongly recommends that you uncomment the following command
+#@ # in order to set sh_command_abbrev_mode to the value "Command-Line-Only".
+#@ # Command abbreviation is intended as an interactive convenience.  Using
+#@ # abbreviations in scripts can cause commands to fail in subsequent releases.
+#@ # 
+#@ #set sh_command_abbrev_mode "Command-Line-Only"
+#@ 
+#@ #
+#@ # Some useful aliases
+#@ #
+#@ alias list_commands		help
+#@ alias report_constraints	report_constraint
+#@ alias report_clocks		report_clock
+#@ 
+#@ #
+#@ # The alias for get_clock was added when get_clock_network_objects
+#@ # was introduced, as it conflicts with get_clocks (and get_clock is a
+#@ # typical abbreviation for get_clocks)
+#@ #
+#@ alias get_clock get_clocks
+#@ 
+#@ 
+#@ #
+#@ #
+#@ # The alias of q to quit is commented out.  Remove the comment 
+#@ # character if you want this alias.  Some users find that having 
+#@ # this particular alias causes problems when mixed with page-mode
+#@ # for reports - an accidental repeated 'q' not only cancels the
+#@ # output but exits the tool.
+#@ #
+#@ #alias q quit
+#@ 
+#@ # -- End source /packages/synopsys/primetime/F-2011.06-SP3-4/admin/setup/.synopsys_pt.setup
+
+source -echo -verbose scripts/post_layout_pt.tcl
+#@ ###### Post Layout PrimeTime Script #######
+#@ 
+#@ ## Define the library location
+#@ source /Users/students/dennison/asic_flow_setup_orig/lib_gen/lib_container.tcl
+#@ set link_library  [ list * /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_hvt/db_ccs/saed32hvt_ff0p85v125c.db /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_hvt/db_ccs/saed32hvt_ff0p85v25c.db /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_hvt/db_ccs/saed32hvt_ff0p85vn40c.db /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_hvt/db_ccs/saed32hvt_ss0p7v125c.db /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_hvt/db_ccs/saed32hvt_ss0p7v25c.db /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_hvt/db_ccs/saed32hvt_ss0p7vn40c.db /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_hvt/db_ccs/saed32hvt_tt0p78v125c.db /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_hvt/db_ccs/saed32hvt_tt0p78v25c.db /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_hvt/db_ccs/saed32hvt_tt0p78vn40c.db /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_lvt/db_ccs/saed32lvt_ff0p85v125c.db /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_lvt/db_ccs/saed32lvt_ff0p85v25c.db /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_lvt/db_ccs/saed32lvt_ff0p85vn40c.db /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_lvt/db_ccs/saed32lvt_ss0p7v125c.db /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_lvt/db_ccs/saed32lvt_ss0p7v25c.db /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_lvt/db_ccs/saed32lvt_ss0p7vn40c.db /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_lvt/db_ccs/saed32lvt_tt0p78v125c.db /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_lvt/db_ccs/saed32lvt_tt0p78v25c.db /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_lvt/db_ccs/saed32lvt_tt0p78vn40c.db ]
+#@ set target_library  [list /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_hvt/db_ccs/saed32hvt_tt0p78v125c.db /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_hvt/db_ccs/saed32hvt_tt0p78v25c.db /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_hvt/db_ccs/saed32hvt_tt0p78vn40c.db /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_lvt/db_ccs/saed32lvt_tt0p78v125c.db /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_lvt/db_ccs/saed32lvt_tt0p78v25c.db /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_lvt/db_ccs/saed32lvt_tt0p78vn40c.db ]
+#@ # -- End source /Users/students/dennison/asic_flow_setup_orig/lib_gen/lib_container.tcl
+
+#@ ##set link_library   saed32lvt_ss0p7v125c.db 
+#@ 
+#@ ##set target_library  saed32lvt_ss0p7v125c.db 
+#@ 
+#@ ## read the extracted verilog netlist file
+#@ read_verilog ../pnr/pnr_ME/output/ME_extracted.v
+#@ 
+#@ ## Set top module name
+#@ current_design top
+#@ 
+#@ ##Read extracted parasitics
+#@ read_parasitics -format SPEF ../pnr/pnr_ME/output/ME_extracted.spef.max
+#@ read_parasitics -format SPEF   { {../pnr/pnr_ME/output/ME_extracted.spef.max} }
+
+#@ 
+#@ read_parasitics -format SPEF ../pnr/pnr_ME/output/ME_extracted.spef.min
+#@ 
+#@ read_sdf ../pnr/pnr_ME/output/ME_extracted.sdf
+#@ ## Read in SDC from the ICC
+#@ read_sdc ../pnr/pnr_ME/const/ME_extracted.sdc
+#@ read_parasitics -format SPEF   { {../pnr/pnr_ME/output/ME_extracted.spef.min} }
+
+#@ 
+#@ set_case_analysis 0 scanEn
+#@ ## Analysis reports
+#@ 
+#@ report_timing -from [all_inputs] -max_paths 20 -to [all_registers -data_pins] > reports/in2reg_timing.rpt
+#@ pl_dump -stop_server
+
+#@ report_timing -from [all_register -clock_pins] -max_paths 20 -to [all_registers -data_pins]  > reports/reg2reg_timing.rpt
+#@ report_timing -from [all_registers -clock_pins] -max_paths 20 -to [all_outputs] > reports/reg2out_timing.rpt
+#@ report_timing -from [all_inputs] -to [all_outputs] -max_paths 20 > reports/in2reg_timing.rpt
+#@ 
+#@ #report_timing -from [all_registers -clock_pins] -to [all_registers -data_pins] -delay_type max  >> reports/timing.rpt
+#@ set_case_analysis 1 scanEn
+#@ report_timing -from [all_registers -clock_pins] -to [all_registers -data_pins] -delay_type min  > reports/timing.rpt
+#@ 
+#@ report_timing -transition_time -capacitance -nets -input_pins -from [all_registers -clock_pins] -to [all_registers -data_pins]  > reports/timing.tran.cap.rpt
+#@ 
+#@ 
+#@ ## Save outputs
+#@ save_session output/ME.session
+#@ 
+#@ # -- End source scripts/post_layout_pt.tcl
+
+eixt
+exit
