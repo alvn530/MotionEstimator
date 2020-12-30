@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : area
+Design : top
+Version: O-2018.06-SP4
+Date   : Thu Dec  3 11:26:56 2020
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    saed32lvt_ss0p75v125c (File: /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_lvt/db_ccs/saed32lvt_ss0p75v125c.db)
+    saed32hvt_ss0p75v125c (File: /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_hvt/db_ccs/saed32hvt_ss0p75v125c.db)
+
+Number of ports:                         1505
+Number of nets:                          2809
+Number of cells:                         1437
+Number of combinational cells:           1059
+Number of sequential cells:               285
+Number of macros/black boxes:               0
+Number of buf/inv:                        335
+Number of references:                      21
+
+Combinational area:               2754.412699
+Buf/Inv area:                      482.873608
+Noncombinational area:            1912.941935
+Macro/Black Box area:                0.000000
+Net Interconnect area:             686.089512
+
+Total cell area:                  4667.354634
+Total area:                       5353.444146
+1

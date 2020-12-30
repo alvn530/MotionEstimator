@@ -1,0 +1,9 @@
+QWarning: X Error: BadAccess (attempt to access private resource denied) 10
+  Major opcode:  2
+  Minor opcode:  0
+  Resource id:  0xc1
+QWarning: X Error: BadAccess (attempt to access private resource denied) 10
+  Major opcode:  61
+  Minor opcode:  0
+  Resource id:  0xc1
+QWarning: QMetaObjectCleanUp::setMetaObject: Double use of QMetaObjectCleanUp!

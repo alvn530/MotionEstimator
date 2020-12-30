@@ -1,0 +1,15 @@
+
+Warning-[RT_UO] Unsupported option
+  Unsupported option '-full64' is ignored
+
+Chronologic VCS simulator copyright 1991-2018
+Contains Synopsys proprietary information.
+Compiler version O-2018.09-SP1_Full64; Runtime version O-2018.09-SP1_Full64;  Dec 10 16:07 2020
+VCD+ Writer O-2018.09-SP1_Full64 Copyright (c) 1991-2018 by Synopsys Inc.
+The file '/courses/engr852/engr852-03/final/vcs/inter.vpd' was opened successfully.
+Warning: [DVAP008] 
+The source file '/courses/engr852/engr852-03/final/vcs/../src/top_tb.sv' cannot be found.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 0
+CPU Time:      0.080 seconds;       Data structure size:   0.0Mb
+Thu Dec 10 16:11:00 2020

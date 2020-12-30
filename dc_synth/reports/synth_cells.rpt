@@ -1,0 +1,152 @@
+ 
+****************************************
+Report : cell
+Design : top
+Version: O-2018.06-SP4
+Date   : Thu Dec  3 11:26:56 2020
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U1                        INVX0_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U2                        INVX0_HVT       saed32hvt_ss0p75v125c
+                                                          1.270720  
+U3                        INVX0_HVT       saed32hvt_ss0p75v125c
+                                                          1.270720  
+U4                        INVX0_HVT       saed32hvt_ss0p75v125c
+                                                          1.270720  
+U5                        INVX0_HVT       saed32hvt_ss0p75v125c
+                                                          1.270720  
+U6                        INVX0_HVT       saed32hvt_ss0p75v125c
+                                                          1.270720  
+U7                        INVX0_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U8                        INVX0_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U9                        INVX0_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U10                       INVX0_HVT       saed32hvt_ss0p75v125c
+                                                          1.270720  
+U11                       INVX0_HVT       saed32hvt_ss0p75v125c
+                                                          1.270720  
+U12                       INVX0_HVT       saed32hvt_ss0p75v125c
+                                                          1.270720  
+U13                       INVX0_HVT       saed32hvt_ss0p75v125c
+                                                          1.270720  
+U14                       INVX0_HVT       saed32hvt_ss0p75v125c
+                                                          1.270720  
+U15                       INVX0_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U16                       INVX0_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U17                       INVX0_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U18                       INVX0_HVT       saed32hvt_ss0p75v125c
+                                                          1.270720  
+U19                       INVX0_HVT       saed32hvt_ss0p75v125c
+                                                          1.270720  
+U20                       INVX0_HVT       saed32hvt_ss0p75v125c
+                                                          1.270720  
+U21                       INVX1_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U22                       INVX1_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U23                       INVX1_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U24                       INVX1_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U25                       INVX1_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U26                       INVX1_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U27                       INVX1_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U28                       INVX1_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U29                       INVX1_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U30                       INVX1_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U31                       INVX1_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U32                       INVX1_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U33                       INVX1_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U34                       INVX1_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U35                       INVX1_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U36                       INVX1_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U37                       INVX1_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U38                       INVX1_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U39                       INVX1_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U40                       INVX1_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U41                       INVX1_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U42                       INVX1_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U43                       INVX1_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U44                       INVX1_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U45                       INVX1_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U46                       INVX1_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U47                       INVX1_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U48                       INVX1_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+comp_u                    Comparator                      222.376003
+                                                                    h, n
+ctl_u                     control                         300.144065
+                                                                    h, n
+pe0                       PE_15                           252.364997
+                                                                    h, n
+pe1                       PE_14                           254.144002
+                                                                    h, n
+pe2                       PE_13                           249.823557
+                                                                    h, n
+pe3                       PE_12                           254.144004
+                                                                    h, n
+pe4                       PE_11                           251.094277
+                                                                    h, n
+pe5                       PE_10                           249.569413
+                                                                    h, n
+pe6                       PE_9                            253.381573
+                                                                    h, n
+pe7                       PE_8                            249.569413
+                                                                    h, n
+pe8                       PE_7                            255.923013
+                                                                    h, n
+pe9                       PE_6                            250.331846
+                                                                    h, n
+pe10                      PE_5                            257.702022
+                                                                    h, n
+pe11                      PE_4                            263.293189
+                                                                    h, n
+pe12                      PE_3                            267.613634
+                                                                    h, n
+pe13                      PE_2                            257.702018
+                                                                    h, n
+pe14                      PE_1                            250.077701
+                                                                    h, n
+pe15                      PE_0                            267.105346
+                                                                    h, n
+--------------------------------------------------------------------------------
+Total 66 cells                                            4667.354634
+1

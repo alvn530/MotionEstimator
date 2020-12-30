@@ -1,0 +1,38 @@
+{
+    "PE": [
+        "PE",
+        "twU73",
+        "module",
+        4
+    ],
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        1
+    ],
+    "top_tb": [
+        "top_tb",
+        "W0eJz",
+        "module",
+        7
+    ],
+    "ROM_R": [
+        "ROM_R",
+        "zCAWT",
+        "module",
+        3
+    ],
+    "ROM_S": [
+        "ROM_S",
+        "eUPee",
+        "module",
+        2
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        6
+    ]
+}

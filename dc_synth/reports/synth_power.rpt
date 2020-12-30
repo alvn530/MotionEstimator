@@ -1,0 +1,92 @@
+Information: Propagating switching activity (medium effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort medium
+Design : top
+Version: O-2018.06-SP4
+Date   : Thu Dec  3 11:27:36 2020
+****************************************
+
+
+Library(s) Used:
+
+    saed32lvt_ss0p75v125c (File: /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_lvt/db_ccs/saed32lvt_ss0p75v125c.db)
+    saed32hvt_ss0p75v125c (File: /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_hvt/db_ccs/saed32hvt_ss0p75v125c.db)
+
+
+Operating Conditions: ss0p75v125c   Library: saed32hvt_ss0p75v125c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+top                    8000              saed32hvt_ss0p75v125c
+PE_15                  8000              saed32hvt_ss0p75v125c
+control                8000              saed32hvt_ss0p75v125c
+Comparator             8000              saed32hvt_ss0p75v125c
+PE_0                   8000              saed32hvt_ss0p75v125c
+PE_1                   8000              saed32hvt_ss0p75v125c
+PE_2                   8000              saed32hvt_ss0p75v125c
+PE_3                   8000              saed32hvt_ss0p75v125c
+PE_4                   8000              saed32hvt_ss0p75v125c
+PE_5                   8000              saed32hvt_ss0p75v125c
+PE_6                   8000              saed32hvt_ss0p75v125c
+PE_7                   8000              saed32hvt_ss0p75v125c
+PE_8                   8000              saed32hvt_ss0p75v125c
+PE_9                   8000              saed32hvt_ss0p75v125c
+PE_10                  8000              saed32hvt_ss0p75v125c
+PE_11                  8000              saed32hvt_ss0p75v125c
+PE_12                  8000              saed32hvt_ss0p75v125c
+PE_13                  8000              saed32hvt_ss0p75v125c
+PE_14                  8000              saed32hvt_ss0p75v125c
+control_DW01_inc_0     ForQA             saed32hvt_ss0p75v125c
+PE_0_DW01_add_0        ForQA             saed32hvt_ss0p75v125c
+PE_1_DW01_add_0        ForQA             saed32hvt_ss0p75v125c
+PE_2_DW01_add_0        ForQA             saed32hvt_ss0p75v125c
+PE_3_DW01_add_0        ForQA             saed32hvt_ss0p75v125c
+PE_4_DW01_add_0        ForQA             saed32hvt_ss0p75v125c
+PE_5_DW01_add_0        ForQA             saed32hvt_ss0p75v125c
+PE_6_DW01_add_0        ForQA             saed32hvt_ss0p75v125c
+PE_7_DW01_add_0        ForQA             saed32hvt_ss0p75v125c
+PE_8_DW01_add_0        ForQA             saed32hvt_ss0p75v125c
+PE_9_DW01_add_0        ForQA             saed32hvt_ss0p75v125c
+PE_10_DW01_add_0       ForQA             saed32hvt_ss0p75v125c
+PE_11_DW01_add_0       ForQA             saed32hvt_ss0p75v125c
+PE_12_DW01_add_0       ForQA             saed32hvt_ss0p75v125c
+PE_13_DW01_add_0       ForQA             saed32hvt_ss0p75v125c
+PE_14_DW01_add_0       ForQA             saed32hvt_ss0p75v125c
+PE_15_DW01_add_0       ForQA             saed32hvt_ss0p75v125c
+
+
+Global Operating Voltage = 0.75 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =   0.0000 uW    (0%)
+  Net Switching Power  =  13.7028 uW  (100%)
+                         ---------
+Total Dynamic Power    =  13.7028 uW  (100%)
+
+Cell Leakage Power     = 126.4862 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            2.7266        4.1525e+07           44.2512  (  31.57%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.0000           10.9762        8.4962e+07           95.9378  (  68.43%)
+--------------------------------------------------------------------------------------------------
+Total              0.0000 uW        13.7028 uW     1.2649e+08 pW       140.1889 uW
+1
