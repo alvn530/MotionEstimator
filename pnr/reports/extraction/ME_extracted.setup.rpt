@@ -1,0 +1,842 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 20
+Design : top
+Version: O-2018.06-SP4
+Date   : Sun Dec 20 18:29:21 2020
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: ss0p75v125c   Library: saed32hvt_ss0p75v125c
+	Parasitic source    : LPE
+	Parasitic mode      : RealRC
+	Extraction mode     : MIN_MAX
+	Extraction derating : 125/125/125
+
+Information: Percent of Arnoldi-based delays = 13.81%
+
+  Startpoint: ctl_u/count_reg[3]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: pe1/Accumulate_reg[7]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.01       0.01
+  ctl_u/count_reg[3]/CLK (DFFX1_LVT)                      0.00       0.01 r
+  ctl_u/count_reg[3]/QN (DFFX1_LVT)                       0.20       0.21 r
+  ctl_u/U84/Y (NAND2X0_LVT)                               0.12 &     0.34 f
+  ctl_u/U79/Y (INVX0_LVT)                                 0.10 &     0.43 r
+  ctl_u/U46/Y (NAND2X0_LVT)                               0.11 &     0.54 f
+  ctl_u/U48/Y (INVX0_LVT)                                 0.09 &     0.63 r
+  ctl_u/U17/Y (AND4X1_LVT)                                0.17 &     0.80 r
+  ctl_u/NewDist[15] (control)                             0.00       0.80 r
+  U6/Y (NBUFFX2_HVT)                                      0.45 &     1.25 r
+  U7/Y (INVX0_HVT)                                        1.07 &     2.32 f
+  pe1/IN1 (PE_14)                                         0.00       2.32 f
+  pe1/U49/Y (NAND2X0_LVT)                                 0.26 &     2.57 r
+  pe1/Accumulate_reg[7]/SETB (DFFSSRX1_HVT)               0.00 &     2.57 r
+  data arrival time                                                  2.57
+
+  clock ideal_clock1 (rise edge)                          3.49       3.49
+  clock network delay (propagated)                        0.00       3.49
+  pe1/Accumulate_reg[7]/CLK (DFFSSRX1_HVT)                0.00       3.49 r
+  library setup time                                     -0.65       2.84
+  data required time                                                 2.84
+  --------------------------------------------------------------------------
+  data required time                                                 2.84
+  data arrival time                                                 -2.57
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.27
+
+
+  Startpoint: ctl_u/count_reg[3]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: pe8/Accumulate_reg[6]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (propagated)         0.01       0.01
+  ctl_u/count_reg[3]/CLK (DFFX1_LVT)       0.00       0.01 r
+  ctl_u/count_reg[3]/QN (DFFX1_LVT)        0.20       0.21 r
+  ctl_u/U84/Y (NAND2X0_LVT)                0.12 &     0.34 f
+  ctl_u/U79/Y (INVX0_LVT)                  0.10 &     0.43 r
+  ctl_u/U46/Y (NAND2X0_LVT)                0.11 &     0.54 f
+  ctl_u/U48/Y (INVX0_LVT)                  0.09 &     0.63 r
+  ctl_u/U17/Y (AND4X1_LVT)                 0.17 &     0.80 r
+  ctl_u/NewDist[15] (control)              0.00       0.80 r
+  U6/Y (NBUFFX2_HVT)                       0.45 &     1.25 r
+  U7/Y (INVX0_HVT)                         1.07 &     2.32 f
+  pe8/newDist (PE_7)                       0.00       2.32 f
+  pe8/U13/Y (AND2X1_HVT)                   0.65 &     2.96 f
+  pe8/U25/Y (OR2X1_LVT)                    0.12 &     3.09 f
+  pe8/Accumulate_reg[6]/D (DFFX1_LVT)      0.00 &     3.09 f
+  data arrival time                                   3.09
+
+  clock ideal_clock1 (rise edge)           3.49       3.49
+  clock network delay (propagated)         0.01       3.49
+  pe8/Accumulate_reg[6]/CLK (DFFX1_LVT)
+                                           0.00       3.49 r
+  library setup time                      -0.09       3.41
+  data required time                                  3.41
+  -----------------------------------------------------------
+  data required time                                  3.41
+  data arrival time                                  -3.09
+  -----------------------------------------------------------
+  slack (MET)                                         0.32
+
+
+  Startpoint: ctl_u/count_reg[3]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: pe8/Accumulate_reg[0]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (propagated)         0.01       0.01
+  ctl_u/count_reg[3]/CLK (DFFX1_LVT)       0.00       0.01 r
+  ctl_u/count_reg[3]/QN (DFFX1_LVT)        0.20       0.21 r
+  ctl_u/U84/Y (NAND2X0_LVT)                0.12 &     0.34 f
+  ctl_u/U79/Y (INVX0_LVT)                  0.10 &     0.43 r
+  ctl_u/U46/Y (NAND2X0_LVT)                0.11 &     0.54 f
+  ctl_u/U48/Y (INVX0_LVT)                  0.09 &     0.63 r
+  ctl_u/U17/Y (AND4X1_LVT)                 0.17 &     0.80 r
+  ctl_u/NewDist[15] (control)              0.00       0.80 r
+  U6/Y (NBUFFX2_HVT)                       0.45 &     1.25 r
+  U7/Y (INVX0_HVT)                         1.07 &     2.32 f
+  pe8/newDist (PE_7)                       0.00       2.32 f
+  pe8/U13/Y (AND2X1_HVT)                   0.65 &     2.96 f
+  pe8/U28/Y (OR2X1_LVT)                    0.13 &     3.09 f
+  pe8/Accumulate_reg[0]/D (DFFX1_LVT)      0.00 &     3.09 f
+  data arrival time                                   3.09
+
+  clock ideal_clock1 (rise edge)           3.49       3.49
+  clock network delay (propagated)         0.01       3.50
+  pe8/Accumulate_reg[0]/CLK (DFFX1_LVT)
+                                           0.00       3.50 r
+  library setup time                      -0.08       3.42
+  data required time                                  3.42
+  -----------------------------------------------------------
+  data required time                                  3.42
+  data arrival time                                  -3.09
+  -----------------------------------------------------------
+  slack (MET)                                         0.33
+
+
+  Startpoint: ctl_u/count_reg[3]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: pe8/Accumulate_reg[4]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (propagated)         0.01       0.01
+  ctl_u/count_reg[3]/CLK (DFFX1_LVT)       0.00       0.01 r
+  ctl_u/count_reg[3]/QN (DFFX1_LVT)        0.20       0.21 r
+  ctl_u/U84/Y (NAND2X0_LVT)                0.12 &     0.34 f
+  ctl_u/U79/Y (INVX0_LVT)                  0.10 &     0.43 r
+  ctl_u/U46/Y (NAND2X0_LVT)                0.11 &     0.54 f
+  ctl_u/U48/Y (INVX0_LVT)                  0.09 &     0.63 r
+  ctl_u/U17/Y (AND4X1_LVT)                 0.17 &     0.80 r
+  ctl_u/NewDist[15] (control)              0.00       0.80 r
+  U6/Y (NBUFFX2_HVT)                       0.45 &     1.25 r
+  U7/Y (INVX0_HVT)                         1.07 &     2.32 f
+  pe8/newDist (PE_7)                       0.00       2.32 f
+  pe8/U13/Y (AND2X1_HVT)                   0.65 &     2.96 f
+  pe8/U7/Y (OR2X1_LVT)                     0.12 &     3.09 f
+  pe8/Accumulate_reg[4]/D (DFFX1_LVT)      0.00 &     3.09 f
+  data arrival time                                   3.09
+
+  clock ideal_clock1 (rise edge)           3.49       3.49
+  clock network delay (propagated)         0.01       3.50
+  pe8/Accumulate_reg[4]/CLK (DFFX1_LVT)
+                                           0.00       3.50 r
+  library setup time                      -0.08       3.42
+  data required time                                  3.42
+  -----------------------------------------------------------
+  data required time                                  3.42
+  data arrival time                                  -3.09
+  -----------------------------------------------------------
+  slack (MET)                                         0.33
+
+
+  Startpoint: ctl_u/count_reg[3]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: pe0/Accumulate_reg[3]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (propagated)         0.01       0.01
+  ctl_u/count_reg[3]/CLK (DFFX1_LVT)       0.00       0.01 r
+  ctl_u/count_reg[3]/QN (DFFX1_LVT)        0.20       0.21 r
+  ctl_u/U84/Y (NAND2X0_LVT)                0.12 &     0.34 f
+  ctl_u/U79/Y (INVX0_LVT)                  0.10 &     0.43 r
+  ctl_u/U46/Y (NAND2X0_LVT)                0.11 &     0.54 f
+  ctl_u/U48/Y (INVX0_LVT)                  0.09 &     0.63 r
+  ctl_u/U17/Y (AND4X1_LVT)                 0.17 &     0.80 r
+  ctl_u/NewDist[15] (control)              0.00       0.80 r
+  U6/Y (NBUFFX2_HVT)                       0.45 &     1.25 r
+  U7/Y (INVX0_HVT)                         1.07 &     2.32 f
+  pe0/IN0 (PE_15)                          0.00       2.32 f
+  pe0/U13/Y (AND2X1_HVT)                   0.61 &     2.93 f
+  pe0/U27/Y (OR2X1_LVT)                    0.12 &     3.05 f
+  pe0/Accumulate_reg[3]/D (DFFX1_LVT)      0.00 &     3.05 f
+  data arrival time                                   3.05
+
+  clock ideal_clock1 (rise edge)           3.49       3.49
+  clock network delay (propagated)         0.01       3.49
+  pe0/Accumulate_reg[3]/CLK (DFFX1_LVT)
+                                           0.00       3.49 r
+  library setup time                      -0.09       3.41
+  data required time                                  3.41
+  -----------------------------------------------------------
+  data required time                                  3.41
+  data arrival time                                  -3.05
+  -----------------------------------------------------------
+  slack (MET)                                         0.36
+
+
+  Startpoint: ctl_u/count_reg[3]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: pe0/Accumulate_reg[0]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (propagated)         0.01       0.01
+  ctl_u/count_reg[3]/CLK (DFFX1_LVT)       0.00       0.01 r
+  ctl_u/count_reg[3]/QN (DFFX1_LVT)        0.20       0.21 r
+  ctl_u/U84/Y (NAND2X0_LVT)                0.12 &     0.34 f
+  ctl_u/U79/Y (INVX0_LVT)                  0.10 &     0.43 r
+  ctl_u/U46/Y (NAND2X0_LVT)                0.11 &     0.54 f
+  ctl_u/U48/Y (INVX0_LVT)                  0.09 &     0.63 r
+  ctl_u/U17/Y (AND4X1_LVT)                 0.17 &     0.80 r
+  ctl_u/NewDist[15] (control)              0.00       0.80 r
+  U6/Y (NBUFFX2_HVT)                       0.45 &     1.25 r
+  U7/Y (INVX0_HVT)                         1.07 &     2.32 f
+  pe0/IN0 (PE_15)                          0.00       2.32 f
+  pe0/U13/Y (AND2X1_HVT)                   0.61 &     2.93 f
+  pe0/U22/Y (OR2X1_LVT)                    0.12 &     3.05 f
+  pe0/Accumulate_reg[0]/D (DFFX1_LVT)      0.00 &     3.05 f
+  data arrival time                                   3.05
+
+  clock ideal_clock1 (rise edge)           3.49       3.49
+  clock network delay (propagated)         0.01       3.49
+  pe0/Accumulate_reg[0]/CLK (DFFX1_LVT)
+                                           0.00       3.49 r
+  library setup time                      -0.09       3.41
+  data required time                                  3.41
+  -----------------------------------------------------------
+  data required time                                  3.41
+  data arrival time                                  -3.05
+  -----------------------------------------------------------
+  slack (MET)                                         0.36
+
+
+  Startpoint: ctl_u/count_reg[3]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: pe5/Accumulate_reg[4]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (propagated)         0.01       0.01
+  ctl_u/count_reg[3]/CLK (DFFX1_LVT)       0.00       0.01 r
+  ctl_u/count_reg[3]/QN (DFFX1_LVT)        0.20       0.21 r
+  ctl_u/U84/Y (NAND2X0_LVT)                0.12 &     0.34 f
+  ctl_u/U79/Y (INVX0_LVT)                  0.10 &     0.43 r
+  ctl_u/U46/Y (NAND2X0_LVT)                0.11 &     0.54 f
+  ctl_u/U48/Y (INVX0_LVT)                  0.09 &     0.63 r
+  ctl_u/U17/Y (AND4X1_LVT)                 0.17 &     0.80 r
+  ctl_u/NewDist[15] (control)              0.00       0.80 r
+  U6/Y (NBUFFX2_HVT)                       0.45 &     1.25 r
+  U7/Y (INVX0_HVT)                         1.07 &     2.32 f
+  pe5/IN0 (PE_10)                          0.00       2.32 f
+  pe5/U4/Y (AND2X1_HVT)                    0.61 &     2.93 f
+  pe5/U38/Y (OR2X1_LVT)                    0.12 &     3.05 f
+  pe5/Accumulate_reg[4]/D (DFFX1_LVT)      0.00 &     3.05 f
+  data arrival time                                   3.05
+
+  clock ideal_clock1 (rise edge)           3.49       3.49
+  clock network delay (propagated)         0.01       3.50
+  pe5/Accumulate_reg[4]/CLK (DFFX1_LVT)
+                                           0.00       3.50 r
+  library setup time                      -0.08       3.42
+  data required time                                  3.42
+  -----------------------------------------------------------
+  data required time                                  3.42
+  data arrival time                                  -3.05
+  -----------------------------------------------------------
+  slack (MET)                                         0.37
+
+
+  Startpoint: ctl_u/count_reg[3]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: pe5/Accumulate_reg[6]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (propagated)         0.01       0.01
+  ctl_u/count_reg[3]/CLK (DFFX1_LVT)       0.00       0.01 r
+  ctl_u/count_reg[3]/QN (DFFX1_LVT)        0.20       0.21 r
+  ctl_u/U84/Y (NAND2X0_LVT)                0.12 &     0.34 f
+  ctl_u/U79/Y (INVX0_LVT)                  0.10 &     0.43 r
+  ctl_u/U46/Y (NAND2X0_LVT)                0.11 &     0.54 f
+  ctl_u/U48/Y (INVX0_LVT)                  0.09 &     0.63 r
+  ctl_u/U17/Y (AND4X1_LVT)                 0.17 &     0.80 r
+  ctl_u/NewDist[15] (control)              0.00       0.80 r
+  U6/Y (NBUFFX2_HVT)                       0.45 &     1.25 r
+  U7/Y (INVX0_HVT)                         1.07 &     2.32 f
+  pe5/IN0 (PE_10)                          0.00       2.32 f
+  pe5/U4/Y (AND2X1_HVT)                    0.61 &     2.93 f
+  pe5/U42/Y (OR2X1_LVT)                    0.12 &     3.04 f
+  pe5/Accumulate_reg[6]/D (DFFX1_LVT)      0.00 &     3.04 f
+  data arrival time                                   3.04
+
+  clock ideal_clock1 (rise edge)           3.49       3.49
+  clock network delay (propagated)         0.01       3.50
+  pe5/Accumulate_reg[6]/CLK (DFFX1_LVT)
+                                           0.00       3.50 r
+  library setup time                      -0.08       3.42
+  data required time                                  3.42
+  -----------------------------------------------------------
+  data required time                                  3.42
+  data arrival time                                  -3.04
+  -----------------------------------------------------------
+  slack (MET)                                         0.37
+
+
+  Startpoint: ctl_u/count_reg[3]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: pe1/Accumulate_reg[5]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.01       0.01
+  ctl_u/count_reg[3]/CLK (DFFX1_LVT)                      0.00       0.01 r
+  ctl_u/count_reg[3]/QN (DFFX1_LVT)                       0.20       0.21 r
+  ctl_u/U84/Y (NAND2X0_LVT)                               0.12 &     0.34 f
+  ctl_u/U79/Y (INVX0_LVT)                                 0.10 &     0.43 r
+  ctl_u/U46/Y (NAND2X0_LVT)                               0.11 &     0.54 f
+  ctl_u/U48/Y (INVX0_LVT)                                 0.09 &     0.63 r
+  ctl_u/U17/Y (AND4X1_LVT)                                0.17 &     0.80 r
+  ctl_u/NewDist[15] (control)                             0.00       0.80 r
+  U6/Y (NBUFFX2_HVT)                                      0.45 &     1.25 r
+  U7/Y (INVX0_HVT)                                        1.07 &     2.32 f
+  pe1/IN1 (PE_14)                                         0.00       2.32 f
+  pe1/U49/Y (NAND2X0_LVT)                                 0.26 &     2.57 r
+  pe1/U15/Y (NAND2X0_HVT)                                 0.32 &     2.89 f
+  pe1/Accumulate_reg[5]/RSTB (DFFSSRX1_LVT)               0.00 &     2.89 f
+  data arrival time                                                  2.89
+
+  clock ideal_clock1 (rise edge)                          3.49       3.49
+  clock network delay (propagated)                        0.00       3.49
+  pe1/Accumulate_reg[5]/CLK (DFFSSRX1_LVT)                0.00       3.49 r
+  library setup time                                     -0.22       3.27
+  data required time                                                 3.27
+  --------------------------------------------------------------------------
+  data required time                                                 3.27
+  data arrival time                                                 -2.89
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.39
+
+
+  Startpoint: ctl_u/count_reg[2]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: pe13/Accumulate_reg[7]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.01       0.01
+  ctl_u/count_reg[2]/CLK (DFFSSRX1_LVT)                   0.00       0.01 r
+  ctl_u/count_reg[2]/Q (DFFSSRX1_LVT)                     0.37       0.38 r
+  ctl_u/U4/Y (NAND2X0_LVT)                                0.12 &     0.50 f
+  ctl_u/U36/Y (NOR2X0_LVT)                                0.16 &     0.66 r
+  ctl_u/S1S2mux[13] (control)                             0.00       0.66 r
+  pe13/s1s2mux (PE_2)                                     0.00       0.66 r
+  pe13/U36/Y (XNOR2X1_LVT)                                0.18 &     0.84 f
+  pe13/U54/Y (NOR4X1_LVT)                                 0.22 &     1.06 r
+  pe13/U45/Y (MUX21X1_HVT)                                0.42 &     1.48 f
+  pe13/add_16/B[2] (PE_2_DW01_add_0)                      0.00       1.48 f
+  pe13/add_16/U1_2/CO (FADDX1_LVT)                        0.18 &     1.67 f
+  pe13/add_16/U1_3/CO (FADDX1_LVT)                        0.14 &     1.80 f
+  pe13/add_16/U1_4/CO (FADDX1_LVT)                        0.14 &     1.95 f
+  pe13/add_16/U1_5/CO (FADDX1_LVT)                        0.15 &     2.10 f
+  pe13/add_16/U1_6/CO (FADDX1_LVT)                        0.15 &     2.25 f
+  pe13/add_16/U1_7/S (FADDX1_LVT)                         0.23 &     2.47 r
+  pe13/add_16/SUM[7] (PE_2_DW01_add_0)                    0.00       2.47 r
+  pe13/U37/Y (MUX21X1_HVT)                                0.29 &     2.77 r
+  pe13/U7/Y (OR2X1_LVT)                                   0.11 &     2.88 r
+  pe13/Accumulate_reg[7]/RSTB (DFFSSRX1_LVT)              0.00 &     2.88 r
+  data arrival time                                                  2.88
+
+  clock ideal_clock1 (rise edge)                          3.49       3.49
+  clock network delay (propagated)                        0.00       3.49
+  pe13/Accumulate_reg[7]/CLK (DFFSSRX1_LVT)               0.00       3.49 r
+  library setup time                                     -0.17       3.32
+  data required time                                                 3.32
+  --------------------------------------------------------------------------
+  data required time                                                 3.32
+  data arrival time                                                 -2.88
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.44
+
+
+  Startpoint: ctl_u/count_reg[3]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: pe10/Accumulate_reg[4]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.01       0.01
+  ctl_u/count_reg[3]/CLK (DFFX1_LVT)                      0.00       0.01 r
+  ctl_u/count_reg[3]/QN (DFFX1_LVT)                       0.20       0.21 r
+  ctl_u/U84/Y (NAND2X0_LVT)                               0.12 &     0.34 f
+  ctl_u/U79/Y (INVX0_LVT)                                 0.10 &     0.43 r
+  ctl_u/U46/Y (NAND2X0_LVT)                               0.11 &     0.54 f
+  ctl_u/U48/Y (INVX0_LVT)                                 0.09 &     0.63 r
+  ctl_u/U17/Y (AND4X1_LVT)                                0.17 &     0.80 r
+  ctl_u/NewDist[15] (control)                             0.00       0.80 r
+  U6/Y (NBUFFX2_HVT)                                      0.45 &     1.25 r
+  U7/Y (INVX0_HVT)                                        1.07 &     2.32 f
+  pe10/IN0 (PE_5)                                         0.00       2.32 f
+  pe10/U33/Y (AND2X1_LVT)                                 0.40 &     2.71 f
+  pe10/U34/Y (OR2X1_HVT)                                  0.21 &     2.93 f
+  pe10/Accumulate_reg[4]/D (DFFX1_LVT)                    0.00 &     2.93 f
+  data arrival time                                                  2.93
+
+  clock ideal_clock1 (rise edge)                          3.49       3.49
+  clock network delay (propagated)                        0.01       3.49
+  pe10/Accumulate_reg[4]/CLK (DFFX1_LVT)                  0.00       3.49 r
+  library setup time                                     -0.09       3.40
+  data required time                                                 3.40
+  --------------------------------------------------------------------------
+  data required time                                                 3.40
+  data arrival time                                                 -2.93
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.47
+
+
+  Startpoint: ctl_u/count_reg[2]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: pe12/Accumulate_reg[0]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.01       0.01
+  ctl_u/count_reg[2]/CLK (DFFSSRX1_LVT)                   0.00       0.01 r
+  ctl_u/count_reg[2]/Q (DFFSSRX1_LVT)                     0.37       0.38 r
+  ctl_u/U4/Y (NAND2X0_LVT)                                0.12 &     0.50 f
+  ctl_u/U36/Y (NOR2X0_LVT)                                0.16 &     0.66 r
+  ctl_u/U53/Y (AO21X1_LVT)                                0.08 &     0.73 r
+  ctl_u/S1S2mux[12] (control)                             0.00       0.73 r
+  pe12/s1s2mux (PE_3)                                     0.00       0.73 r
+  pe12/U27/Y (XOR2X1_LVT)                                 0.20 &     0.93 f
+  pe12/U11/Y (NOR4X1_LVT)                                 0.17 &     1.10 r
+  pe12/U10/Y (MUX21X1_LVT)                                0.14 &     1.25 r
+  pe12/add_16/B[0] (PE_3_DW01_add_0)                      0.00       1.25 r
+  pe12/add_16/U3/Y (AND2X1_LVT)                           0.09 &     1.33 r
+  pe12/add_16/U1_1/CO (FADDX1_LVT)                        0.14 &     1.48 r
+  pe12/add_16/U1_2/CO (FADDX1_LVT)                        0.15 &     1.62 r
+  pe12/add_16/U1_3/CO (FADDX1_LVT)                        0.15 &     1.77 r
+  pe12/add_16/U1_4/CO (FADDX1_LVT)                        0.14 &     1.91 r
+  pe12/add_16/U1_5/CO (FADDX1_LVT)                        0.14 &     2.05 r
+  pe12/add_16/U1_6/CO (FADDX1_LVT)                        0.14 &     2.19 r
+  pe12/add_16/U1_7/CO (FADDX1_LVT)                        0.14 &     2.33 r
+  pe12/add_16/SUM[8] (PE_3_DW01_add_0)                    0.00       2.33 r
+  pe12/U5/Y (NAND2X0_LVT)                                 0.09 &     2.41 f
+  pe12/Accumulate_reg[0]/SETB (DFFSSRX1_HVT)              0.00 &     2.41 f
+  data arrival time                                                  2.41
+
+  clock ideal_clock1 (rise edge)                          3.49       3.49
+  clock network delay (propagated)                        0.01       3.49
+  pe12/Accumulate_reg[0]/CLK (DFFSSRX1_HVT)               0.00       3.49 r
+  library setup time                                     -0.61       2.88
+  data required time                                                 2.88
+  --------------------------------------------------------------------------
+  data required time                                                 2.88
+  data arrival time                                                 -2.41
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.47
+
+
+  Startpoint: ctl_u/count_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: pe14/Accumulate_reg[7]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.01       0.01
+  ctl_u/count_reg[0]/CLK (DFFSSRX1_LVT)                   0.00       0.01 r
+  ctl_u/count_reg[0]/Q (DFFSSRX1_LVT)                     0.36       0.36 r
+  ctl_u/AddressR[0] (control)                             0.00       0.36 r
+  U1/Y (INVX0_HVT)                                        0.32 &     0.68 f
+  ctl_u/IN1 (control)                                     0.00       0.68 f
+  ctl_u/U44/Y (OR2X1_LVT)                                 0.14 &     0.82 f
+  ctl_u/U45/Y (OR2X1_LVT)                                 0.10 &     0.92 f
+  ctl_u/U83/Y (INVX0_LVT)                                 0.05 &     0.97 r
+  ctl_u/S1S2mux[14] (control)                             0.00       0.97 r
+  pe14/s1s2mux (PE_1)                                     0.00       0.97 r
+  pe14/U4/Y (XOR2X1_LVT)                                  0.19 &     1.16 f
+  pe14/U39/Y (NOR4X1_LVT)                                 0.21 &     1.37 r
+  pe14/U17/Y (MUX21X1_LVT)                                0.21 &     1.58 f
+  pe14/add_16/B[0] (PE_1_DW01_add_0)                      0.00       1.58 f
+  pe14/add_16/U2/Y (AND2X1_LVT)                           0.12 &     1.70 f
+  pe14/add_16/U1_1/CO (FADDX1_LVT)                        0.13 &     1.82 f
+  pe14/add_16/U1_2/CO (FADDX1_LVT)                        0.13 &     1.96 f
+  pe14/add_16/U1_3/CO (FADDX1_LVT)                        0.13 &     2.09 f
+  pe14/add_16/U1_4/CO (FADDX1_LVT)                        0.14 &     2.23 f
+  pe14/add_16/U1_5/CO (FADDX1_LVT)                        0.13 &     2.36 f
+  pe14/add_16/U1_6/CO (FADDX1_LVT)                        0.14 &     2.50 f
+  pe14/add_16/U1_7/S (FADDX1_LVT)                         0.22 &     2.72 r
+  pe14/add_16/SUM[7] (PE_1_DW01_add_0)                    0.00       2.72 r
+  pe14/U47/Y (MUX21X1_LVT)                                0.12 &     2.84 r
+  pe14/U13/Y (OR2X1_LVT)                                  0.10 &     2.94 r
+  pe14/Accumulate_reg[7]/D (DFFX1_LVT)                    0.00 &     2.94 r
+  data arrival time                                                  2.94
+
+  clock ideal_clock1 (rise edge)                          3.49       3.49
+  clock network delay (propagated)                        0.01       3.49
+  pe14/Accumulate_reg[7]/CLK (DFFX1_LVT)                  0.00       3.49 r
+  library setup time                                     -0.08       3.42
+  data required time                                                 3.42
+  --------------------------------------------------------------------------
+  data required time                                                 3.42
+  data arrival time                                                 -2.94
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.48
+
+
+  Startpoint: ctl_u/count_reg[3]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: pe15/Accumulate_reg[1]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.01       0.01
+  ctl_u/count_reg[3]/CLK (DFFX1_LVT)                      0.00       0.01 r
+  ctl_u/count_reg[3]/QN (DFFX1_LVT)                       0.20       0.21 r
+  ctl_u/U84/Y (NAND2X0_LVT)                               0.12 &     0.34 f
+  ctl_u/U79/Y (INVX0_LVT)                                 0.10 &     0.43 r
+  ctl_u/U46/Y (NAND2X0_LVT)                               0.11 &     0.54 f
+  ctl_u/U48/Y (INVX0_LVT)                                 0.09 &     0.63 r
+  ctl_u/U17/Y (AND4X1_LVT)                                0.17 &     0.80 r
+  ctl_u/NewDist[15] (control)                             0.00       0.80 r
+  U6/Y (NBUFFX2_HVT)                                      0.45 &     1.25 r
+  U7/Y (INVX0_HVT)                                        1.07 &     2.32 f
+  pe15/newDist (PE_0)                                     0.00       2.32 f
+  pe15/U29/Y (AND2X1_LVT)                                 0.42 &     2.74 f
+  pe15/U25/Y (AO221X1_LVT)                                0.15 &     2.89 f
+  pe15/Accumulate_reg[1]/D (DFFX1_LVT)                    0.00 &     2.89 f
+  data arrival time                                                  2.89
+
+  clock ideal_clock1 (rise edge)                          3.49       3.49
+  clock network delay (propagated)                        0.01       3.50
+  pe15/Accumulate_reg[1]/CLK (DFFX1_LVT)                  0.00       3.50 r
+  library setup time                                     -0.12       3.38
+  data required time                                                 3.38
+  --------------------------------------------------------------------------
+  data required time                                                 3.38
+  data arrival time                                                 -2.89
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.49
+
+
+  Startpoint: ctl_u/count_reg[2]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: pe9/Accumulate_reg[7]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.01       0.01
+  ctl_u/count_reg[2]/CLK (DFFSSRX1_LVT)                   0.00       0.01 r
+  ctl_u/count_reg[2]/Q (DFFSSRX1_LVT)                     0.37       0.38 r
+  ctl_u/U81/Y (AND2X1_LVT)                                0.14 &     0.51 r
+  ctl_u/U33/Y (AO21X1_LVT)                                0.09 &     0.61 r
+  ctl_u/S1S2mux[9] (control)                              0.00       0.61 r
+  pe9/s1s2mux (PE_6)                                      0.00       0.61 r
+  pe9/U5/Y (XOR2X1_LVT)                                   0.18 &     0.79 f
+  pe9/U44/Y (NOR4X1_LVT)                                  0.28 &     1.07 r
+  pe9/U15/Y (MUX21X1_LVT)                                 0.28 &     1.35 f
+  pe9/add_16/B[0] (PE_6_DW01_add_0)                       0.00       1.35 f
+  pe9/add_16/U2/Y (AND2X1_LVT)                            0.12 &     1.47 f
+  pe9/add_16/U1_1/CO (FADDX1_LVT)                         0.13 &     1.60 f
+  pe9/add_16/U1_2/CO (FADDX1_LVT)                         0.13 &     1.73 f
+  pe9/add_16/U1_3/CO (FADDX1_LVT)                         0.14 &     1.87 f
+  pe9/add_16/U1_4/CO (FADDX1_LVT)                         0.15 &     2.02 f
+  pe9/add_16/U1_5/CO (FADDX1_LVT)                         0.14 &     2.16 f
+  pe9/add_16/U1_6/CO (FADDX1_LVT)                         0.14 &     2.29 f
+  pe9/add_16/U1_7/S (FADDX1_LVT)                          0.22 &     2.52 r
+  pe9/add_16/SUM[7] (PE_6_DW01_add_0)                     0.00       2.52 r
+  pe9/U11/Y (MUX21X1_HVT)                                 0.29 &     2.81 r
+  pe9/U24/Y (OR2X1_LVT)                                   0.11 &     2.92 r
+  pe9/Accumulate_reg[7]/D (DFFX1_LVT)                     0.00 &     2.92 r
+  data arrival time                                                  2.92
+
+  clock ideal_clock1 (rise edge)                          3.49       3.49
+  clock network delay (propagated)                        0.00       3.49
+  pe9/Accumulate_reg[7]/CLK (DFFX1_LVT)                   0.00       3.49 r
+  library setup time                                     -0.08       3.42
+  data required time                                                 3.42
+  --------------------------------------------------------------------------
+  data required time                                                 3.42
+  data arrival time                                                 -2.92
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.49
+
+
+  Startpoint: ctl_u/count_reg[3]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: pe15/Accumulate_reg[0]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.01       0.01
+  ctl_u/count_reg[3]/CLK (DFFX1_LVT)                      0.00       0.01 r
+  ctl_u/count_reg[3]/QN (DFFX1_LVT)                       0.20       0.21 r
+  ctl_u/U84/Y (NAND2X0_LVT)                               0.12 &     0.34 f
+  ctl_u/U79/Y (INVX0_LVT)                                 0.10 &     0.43 r
+  ctl_u/U46/Y (NAND2X0_LVT)                               0.11 &     0.54 f
+  ctl_u/U48/Y (INVX0_LVT)                                 0.09 &     0.63 r
+  ctl_u/U17/Y (AND4X1_LVT)                                0.17 &     0.80 r
+  ctl_u/NewDist[15] (control)                             0.00       0.80 r
+  U6/Y (NBUFFX2_HVT)                                      0.45 &     1.25 r
+  U7/Y (INVX0_HVT)                                        1.07 &     2.32 f
+  pe15/newDist (PE_0)                                     0.00       2.32 f
+  pe15/U29/Y (AND2X1_LVT)                                 0.42 &     2.74 f
+  pe15/U28/Y (AO221X1_LVT)                                0.14 &     2.88 f
+  pe15/Accumulate_reg[0]/D (DFFX1_LVT)                    0.00 &     2.88 f
+  data arrival time                                                  2.88
+
+  clock ideal_clock1 (rise edge)                          3.49       3.49
+  clock network delay (propagated)                        0.01       3.50
+  pe15/Accumulate_reg[0]/CLK (DFFX1_LVT)                  0.00       3.50 r
+  library setup time                                     -0.12       3.38
+  data required time                                                 3.38
+  --------------------------------------------------------------------------
+  data required time                                                 3.38
+  data arrival time                                                 -2.88
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.50
+
+
+  Startpoint: ctl_u/count_reg[3]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: pe15/Accumulate_reg[3]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.01       0.01
+  ctl_u/count_reg[3]/CLK (DFFX1_LVT)                      0.00       0.01 r
+  ctl_u/count_reg[3]/QN (DFFX1_LVT)                       0.20       0.21 r
+  ctl_u/U84/Y (NAND2X0_LVT)                               0.12 &     0.34 f
+  ctl_u/U79/Y (INVX0_LVT)                                 0.10 &     0.43 r
+  ctl_u/U46/Y (NAND2X0_LVT)                               0.11 &     0.54 f
+  ctl_u/U48/Y (INVX0_LVT)                                 0.09 &     0.63 r
+  ctl_u/U17/Y (AND4X1_LVT)                                0.17 &     0.80 r
+  ctl_u/NewDist[15] (control)                             0.00       0.80 r
+  U6/Y (NBUFFX2_HVT)                                      0.45 &     1.25 r
+  U7/Y (INVX0_HVT)                                        1.07 &     2.32 f
+  pe15/newDist (PE_0)                                     0.00       2.32 f
+  pe15/U29/Y (AND2X1_LVT)                                 0.42 &     2.74 f
+  pe15/U19/Y (AO221X1_LVT)                                0.14 &     2.88 f
+  pe15/Accumulate_reg[3]/D (DFFX1_LVT)                    0.00 &     2.88 f
+  data arrival time                                                  2.88
+
+  clock ideal_clock1 (rise edge)                          3.49       3.49
+  clock network delay (propagated)                        0.01       3.50
+  pe15/Accumulate_reg[3]/CLK (DFFX1_LVT)                  0.00       3.50 r
+  library setup time                                     -0.12       3.38
+  data required time                                                 3.38
+  --------------------------------------------------------------------------
+  data required time                                                 3.38
+  data arrival time                                                 -2.88
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.50
+
+
+  Startpoint: ctl_u/count_reg[3]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: pe15/Accumulate_reg[2]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.01       0.01
+  ctl_u/count_reg[3]/CLK (DFFX1_LVT)                      0.00       0.01 r
+  ctl_u/count_reg[3]/QN (DFFX1_LVT)                       0.20       0.21 r
+  ctl_u/U84/Y (NAND2X0_LVT)                               0.12 &     0.34 f
+  ctl_u/U79/Y (INVX0_LVT)                                 0.10 &     0.43 r
+  ctl_u/U46/Y (NAND2X0_LVT)                               0.11 &     0.54 f
+  ctl_u/U48/Y (INVX0_LVT)                                 0.09 &     0.63 r
+  ctl_u/U17/Y (AND4X1_LVT)                                0.17 &     0.80 r
+  ctl_u/NewDist[15] (control)                             0.00       0.80 r
+  U6/Y (NBUFFX2_HVT)                                      0.45 &     1.25 r
+  U7/Y (INVX0_HVT)                                        1.07 &     2.32 f
+  pe15/newDist (PE_0)                                     0.00       2.32 f
+  pe15/U29/Y (AND2X1_LVT)                                 0.42 &     2.74 f
+  pe15/U22/Y (AO221X1_LVT)                                0.14 &     2.88 f
+  pe15/Accumulate_reg[2]/D (DFFX1_LVT)                    0.00 &     2.88 f
+  data arrival time                                                  2.88
+
+  clock ideal_clock1 (rise edge)                          3.49       3.49
+  clock network delay (propagated)                        0.01       3.50
+  pe15/Accumulate_reg[2]/CLK (DFFX1_LVT)                  0.00       3.50 r
+  library setup time                                     -0.12       3.38
+  data required time                                                 3.38
+  --------------------------------------------------------------------------
+  data required time                                                 3.38
+  data arrival time                                                 -2.88
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.50
+
+
+  Startpoint: ctl_u/count_reg[3]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: pe15/Accumulate_reg[5]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.01       0.01
+  ctl_u/count_reg[3]/CLK (DFFX1_LVT)                      0.00       0.01 r
+  ctl_u/count_reg[3]/QN (DFFX1_LVT)                       0.20       0.21 r
+  ctl_u/U84/Y (NAND2X0_LVT)                               0.12 &     0.34 f
+  ctl_u/U79/Y (INVX0_LVT)                                 0.10 &     0.43 r
+  ctl_u/U46/Y (NAND2X0_LVT)                               0.11 &     0.54 f
+  ctl_u/U48/Y (INVX0_LVT)                                 0.09 &     0.63 r
+  ctl_u/U17/Y (AND4X1_LVT)                                0.17 &     0.80 r
+  ctl_u/NewDist[15] (control)                             0.00       0.80 r
+  U6/Y (NBUFFX2_HVT)                                      0.45 &     1.25 r
+  U7/Y (INVX0_HVT)                                        1.07 &     2.32 f
+  pe15/newDist (PE_0)                                     0.00       2.32 f
+  pe15/U29/Y (AND2X1_LVT)                                 0.42 &     2.74 f
+  pe15/U13/Y (AO221X1_LVT)                                0.14 &     2.88 f
+  pe15/Accumulate_reg[5]/D (DFFX1_LVT)                    0.00 &     2.88 f
+  data arrival time                                                  2.88
+
+  clock ideal_clock1 (rise edge)                          3.49       3.49
+  clock network delay (propagated)                        0.01       3.50
+  pe15/Accumulate_reg[5]/CLK (DFFX1_LVT)                  0.00       3.50 r
+  library setup time                                     -0.12       3.38
+  data required time                                                 3.38
+  --------------------------------------------------------------------------
+  data required time                                                 3.38
+  data arrival time                                                 -2.88
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.50
+
+
+  Startpoint: ctl_u/count_reg[3]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: pe15/Accumulate_reg[6]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.01       0.01
+  ctl_u/count_reg[3]/CLK (DFFX1_LVT)                      0.00       0.01 r
+  ctl_u/count_reg[3]/QN (DFFX1_LVT)                       0.20       0.21 r
+  ctl_u/U84/Y (NAND2X0_LVT)                               0.12 &     0.34 f
+  ctl_u/U79/Y (INVX0_LVT)                                 0.10 &     0.43 r
+  ctl_u/U46/Y (NAND2X0_LVT)                               0.11 &     0.54 f
+  ctl_u/U48/Y (INVX0_LVT)                                 0.09 &     0.63 r
+  ctl_u/U17/Y (AND4X1_LVT)                                0.17 &     0.80 r
+  ctl_u/NewDist[15] (control)                             0.00       0.80 r
+  U6/Y (NBUFFX2_HVT)                                      0.45 &     1.25 r
+  U7/Y (INVX0_HVT)                                        1.07 &     2.32 f
+  pe15/newDist (PE_0)                                     0.00       2.32 f
+  pe15/U29/Y (AND2X1_LVT)                                 0.42 &     2.74 f
+  pe15/U10/Y (AO221X1_LVT)                                0.14 &     2.88 f
+  pe15/Accumulate_reg[6]/D (DFFX1_LVT)                    0.00 &     2.88 f
+  data arrival time                                                  2.88
+
+  clock ideal_clock1 (rise edge)                          3.49       3.49
+  clock network delay (propagated)                        0.01       3.50
+  pe15/Accumulate_reg[6]/CLK (DFFX1_LVT)                  0.00       3.50 r
+  library setup time                                     -0.12       3.38
+  data required time                                                 3.38
+  --------------------------------------------------------------------------
+  data required time                                                 3.38
+  data arrival time                                                 -2.88
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.50
+
+
+1

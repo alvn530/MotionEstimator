@@ -1,0 +1,35 @@
+set_user_match   -inverted   $svf_ref/top/pe15/newDist   $svf_impl/top/pe15/newDist
+set_user_match   -inverted   $svf_ref/top/pe8/newDist   $svf_impl/top/pe8/newDist
+set_user_match   -inverted   $svf_ref/top/pe15/IN0   $svf_impl/top/pe15/IN0
+set_user_match   -inverted   $svf_ref/top/pe8/IN0   $svf_impl/top/pe8/IN0
+set_user_match   -inverted   $svf_ref/top/pe2/newDist   $svf_impl/top/pe2/newDist
+set_user_match   -inverted   $svf_ref/top/pe7/newDist   $svf_impl/top/pe7/newDist
+set_user_match   -inverted   $svf_ref/top/pe13/IN0   $svf_impl/top/pe13/IN0
+set_user_match   -inverted   $svf_ref/top/pe1/IN1   $svf_impl/top/pe1/IN1
+set_user_match   -inverted   $svf_ref/top/pe0/newDist   $svf_impl/top/pe0/newDist
+set_user_match   -inverted   $svf_ref/top/pe14/IN0   $svf_impl/top/pe14/IN0
+set_user_match   -inverted   $svf_ref/top/pe0/IN0   $svf_impl/top/pe0/IN0
+set_user_match   -inverted   $svf_ref/top/pe1/IN0   $svf_impl/top/pe1/IN0
+set_user_match   -inverted   $svf_ref/top/pe13/newDist   $svf_impl/top/pe13/newDist
+set_user_match   -inverted   $svf_ref/top/pe2/IN0   $svf_impl/top/pe2/IN0
+set_user_match   -inverted   $svf_ref/top/pe7/IN0   $svf_impl/top/pe7/IN0
+set_user_match   -inverted   $svf_ref/top/pe11/newDist   $svf_impl/top/pe11/newDist
+set_user_match   -inverted   $svf_ref/top/pe3/newDist   $svf_impl/top/pe3/newDist
+set_user_match   -inverted   $svf_ref/top/pe9/newDist   $svf_impl/top/pe9/newDist
+set_user_match   -inverted   $svf_ref/top/pe4/newDist   $svf_impl/top/pe4/newDist
+set_user_match   -inverted   $svf_ref/top/pe4/IN0   $svf_impl/top/pe4/IN0
+set_user_match   -inverted   $svf_ref/top/pe9/IN0   $svf_impl/top/pe9/IN0
+set_user_match   -inverted   $svf_ref/top/pe3/IN0   $svf_impl/top/pe3/IN0
+set_user_match   -inverted   $svf_ref/top/pe11/IN0   $svf_impl/top/pe11/IN0
+set_user_match   -inverted   $svf_ref/top/pe12/IN0   $svf_impl/top/pe12/IN0
+set_user_match   -inverted   $svf_ref/top/pe6/IN1   $svf_impl/top/pe6/IN1
+set_user_match   -inverted   $svf_ref/top/pe10/newDist   $svf_impl/top/pe10/newDist
+set_user_match   -inverted   $svf_ref/top/pe6/newDist   $svf_impl/top/pe6/newDist
+set_user_match   -inverted   $svf_ref/top/pe10/IN0   $svf_impl/top/pe10/IN0
+set_user_match   -inverted   $svf_ref/top/pe12/newDist   $svf_impl/top/pe12/newDist
+guide_constraints -body { pe9 } -equivalent { pe9/newDist  ~ pe9/IN1 }
+guide_constraints -body { pe6 } -equivalent { pe6/newDist  ~ pe6/IN0 }
+guide_constraints -body { pe5 } -equivalent { pe5/newDist    pe5/IN1 }
+
+#-------------------------------------------------------------------
+
